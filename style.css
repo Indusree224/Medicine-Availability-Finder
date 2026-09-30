@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #f5f7fb; color: #222; }
+.navbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px 7%; background: #17324d; color: white; flex-wrap: wrap; }
+.nav-links a { color: white; text-decoration: none; margin: 0 8px; }
+.hero { text-align: center; padding: 70px 20px; background: #e7f1f8; }
+.hero h2 { font-size: 34px; margin-bottom: 10px; }
+.button, button { display: inline-block; border: none; background: #17324d; color: white; padding: 11px 18px; border-radius: 6px; cursor: pointer; text-decoration: none; }
+.section { max-width: 1050px; margin: auto; padding: 45px 20px; }
+.section h2 { margin-bottom: 20px; }
+.search-box { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.search-box input, .search-box select, .form input, .form textarea { padding: 12px; border: 1px solid #bbb; border-radius: 6px; }
+.search-box input { flex: 1; min-width: 220px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px #0002; }
+.available { font-weight: bold; }
+.unavailable { font-weight: bold; }
+.form { max-width: 600px; display: grid; gap: 12px; }
+.form textarea { min-height: 120px; resize: vertical; }
+#message, #bookingMessage, #contactStatus { margin-top: 10px; font-weight: bold; }
+footer { text-align: center; padding: 25px; background: #17324d; color: white; }
+@media (max-width: 650px) {
+  .navbar { flex-direction: column; text-align: center; }
+  .nav-links a { display: inline-block; margin: 5px; }
+}
